@@ -1,5 +1,5 @@
-import { StyleSheet, View } from 'react-native';
-import { Divider, PaperProvider, Text} from 'react-native-paper';
+import { StyleSheet } from 'react-native';
+import { Divider,Button, Text} from 'react-native-paper';
 
 export default function Home(){
     return(
@@ -16,7 +16,17 @@ export default function Home(){
                 faster, and more efficient solutions has transformed industries and redefined human potential. 
                 From artificial intelligence to renewable energy, groundbreaking advancements are shaping a future where sustainability 
                 and convenience coexist. However, this rapid growth also underscores the importance of ethical considerations, 
-                ensuring that technology serves humanity without compromising its values. </Text>
+                ensuring that technology serves humanity without compromising its values. 
+                Traveling opens the door to new experiences, cultures, and perspectives, 
+                offering a unique chance to step outside the familiar and embrace the unknown. 
+                Whether it's exploring bustling city streets, hiking through serene mountain trails, 
+                or immersing oneself in local traditions, each journey leaves an indelible mark on the soul. 
+                Beyond the sights and sounds, travel fosters personal growth, teaching resilience, adaptability, 
+                and a deeper understanding of the world and its diversity.
+            </Text>
+            <Button icon='camera' mode='contained' onPress={()=> console.log('Pressed')}>
+                Press me
+            </Button>
         </view>
     )
 }
